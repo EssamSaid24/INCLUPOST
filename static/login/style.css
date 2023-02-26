@@ -1,0 +1,103 @@
+/* set some basic styles for the body */
+body {
+    
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+/* set styles for the containers */
+.container {
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(83, 81, 81, 0.5);
+    margin: 20px auto;
+    max-width: 600px;
+   
+}
+
+
+/* set styles for the headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin-top: 0;
+    color: rgb(108, 108, 108);
+}
+
+/* set styles for the forms */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(233, 67, 67, 0.2);
+}
+
+button[type="submit"],
+#login-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fb7c7c;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #8e3e3e;
+}
+
+/* set styles for the links */
+a {
+    color: #f17070;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.hidden {
+    display: none;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  

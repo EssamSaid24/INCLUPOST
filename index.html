@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Content</title>
+    <link rel="stylesheet" href="./static/post/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://js.upload.io/uploader/v3"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id>
+        <a class="navbar-brand" href="#"><img src="./static/images/logo.png" height="40px" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Post Your Content</h1>
+        <form>
+            <label for="post-text">Enter Caption:</label><br>
+            <textarea id="post-text" name="post-text" rows="5" cols="50"></textarea><br>
+            <div class="drag-area">
+                <div class="drag-text">Drag and drop an image here, or click to select a file.</div>
+                <input type="file" id="post-image" name="post-image" accept="image/*" onchange="previewImage(event)">
+            </div>
+            <input type="submit" value="Post">
+            <div class="social-media-container">
+                <label>Choose social media:</label>
+                <div class="social-media-options">
+                    <div class="social-media-option">
+                        <input type="checkbox" id="twitter" name="social-media" value="twitter">
+                        <label for="twitter">
+                            <img src="./static/images/twitter-logo.png" alt="Twitter Logo" width="20" height="20">
+                        </label>
+                    </div>
+                    <div class="social-media-option">
+                        <input type="checkbox" id="facebook" name="social-media" value="facebook">
+                        <label for="facebook">
+                            <img src="./static/images/facebook-logo.png" alt="Facebook Logo" width="20" height="20">
+                        </label>
+                    </div>
+                    <div class="social-media-option">
+                        <input type="checkbox" id="instagram" name="social-media" value="instagram">
+                        <label for="instagram">
+                            <img src="./static/images/insta-logo.png" alt="Instagram Logo" width="20" height="20">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    <footer>
+        © 2023 inclupost . All rights reserved.
+    </footer>
+    <!-- Popup HTML -->
+    <div class="popup">
+        <div class="popup-content">
+            <p>Your content was posted successfully!</p>
+        </div>
+    </div>
+
+    <script src="../static/post/script.js"></script>
+</body>
+
+</html>
